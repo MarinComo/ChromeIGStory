@@ -23,13 +23,13 @@ export function getStorySlide(story, callback) {
       original: url
     };
   });
-  
+
   var storySlide = {
     key: (story.reel) ? story.reel.id : story.id,
     media: storyMedia,
     story: story
   };
-  
+
   if(callback) {
     callback(storySlide);
   }
@@ -163,7 +163,7 @@ function getZipFileName(trayItem) {
 
 // returns the name of the image/video file to add to the zip file
 function getStoryFileName(storyItem, mediaItemUrl) {
-  return storyItem['id'] + (((mediaItemUrl.includes(".mp4")) ? ".mp4" : ".jpg"));
+  return (storyItem.user ? `${storyItem.user.username}_` : '') + storyItem['id'] + (((mediaItemUrl.includes(".mp4")) ? ".mp4" : ".jpg"));
 }
 
 export function renderToolbar(additionalGroup) {
@@ -268,7 +268,7 @@ export function getLiveVideoMp4AudioUrl(manifest, callback) {
     if(representation.mimeType === 'audio/mp4') {
       callback(representation.BaseURL);
     }
-  });  
+  });
 }
 
 // returns the URL of a video mp4 file for a post-live video
