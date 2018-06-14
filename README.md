@@ -35,7 +35,7 @@ You can right click the image/video in the galley and "Copy Image/Video Address"
 ### Installing Dependencies
 
 ```
-git clone https://github.com/CaliAlec/ChromeIGStory.git
+git clone https://github.com/MarinComo/ChromeIGStory.git
 cd ChromeIGStory
 yarn --ignore-engines
 ```
