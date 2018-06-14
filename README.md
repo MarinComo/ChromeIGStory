@@ -42,7 +42,7 @@ yarn --ignore-engines
 
 ### Running and Developing
 
-In order to build the extension locally to install it in chrome, run the following in the root directory:
+In order to build the extension locally to install it in Chrome, run the following in the root directory:
 
 ```
 yarn gulp
