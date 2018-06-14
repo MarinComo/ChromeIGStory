@@ -42,16 +42,17 @@ yarn --ignore-engines
 
 ### Running and Developing
 
-In order to run the extension locally, follow the steps below.
-
-- In the root directory, run:
+In order to build the extension locally to install it in chrome, run the following in the root directory:
 
 ```
 yarn gulp
 ```
 
-- A /build folder will be generated. Visit chrome://extensions/ in your browser, enable Developer mode, and drag the build folder onto the page to install the extension.
-- If you want to have the build folder will be regenerated on the fly every time you make a change in the code, use `yarn gulp watch` instead of `yarn gulp`. You must go back to chrome://extensions/ and reinstall the extension to see any changes.
+A `build` folder will be generated. Visit chrome://extensions/ in your browser, enable Developer mode, and drag the build folder onto the page to install the extension.
+
+#### Watch mode
+
+If you want to have the build folder will be regenerated on the fly every time you make a change in the code, use `yarn gulp watch` instead of `yarn gulp`. You must go back to chrome://extensions/ and reinstall the extension to see any changes.
 
 # License
 
